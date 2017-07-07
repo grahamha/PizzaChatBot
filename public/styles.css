@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+html, body, #root, .chat-window {
+    height: 100%;
+}
+
+
 body {
+    margin: 0;
     background-color: #2D3E50;
     font-family: 'Roboto', sans-serif;
 }
  
 .chat-window {
     background-color: #EBF1F4;
-    width: 60%;
-    min-height: 100px;
+    width: 60%;    
     margin: 100px auto 0;
     position: relative;    
-    height: 450px;
+    height: calc(100% - 200px);
 }
 
 .chat-conversation {
     overflow-y: auto;
     padding: 20px;
-    height: 340px;
+    height: calc(100% - 110px);
 }
 
 .chat-input {
@@ -115,3 +120,15 @@ body {
     right: -7px;
     top: 18px;
 }
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    .chat-window {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .input { 
+        width: 85%;
+    }
+} 
