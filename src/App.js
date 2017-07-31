@@ -66,6 +66,10 @@ class App extends Component {
     }
 
     saveMessage(message) { 
+        if (message.length == 0) {
+            return;
+        }
+        
         this.setState((state) => ({
             conversation: state.conversation.concat({
                 sender: 'customer',
