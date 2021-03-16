@@ -1,5 +1,7 @@
 # Pizza Chat Bot
 
+Order your pizza using the awesome new pizza chat bot!
+
 ## Getting started
 
 1. Install NPM packages 
